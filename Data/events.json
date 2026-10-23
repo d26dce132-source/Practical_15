@@ -1,0 +1,58 @@
+[
+    {
+        "title": "Web Development Workshop",
+        "date": "2026-09-20",
+        "location": "Computer Lab 1",
+        "description": "Learn HTML, CSS and JavaScript through practical activities.",
+        "category": "Technical"
+    },
+    {
+        "title": "Coding Competition",
+        "date": "2026-09-25",
+        "location": "Main Auditorium",
+        "description": "Participate in a programming competition and solve coding problems.",
+        "category": "Technical"
+    },
+    {
+        "title": "Cultural Fest",
+        "date": "2026-10-02",
+        "location": "College Ground",
+        "description": "Enjoy music, dance, drama and other cultural activities.",
+        "category": "Cultural"
+    },
+    {
+        "title": "Cricket Tournament",
+        "date": "2026-10-05",
+        "location": "College Sports Ground",
+        "description": "Inter-department cricket tournament for students.",
+        "category": "Sports"
+    },
+    {
+        "title": "AI and Machine Learning Seminar",
+        "date": "2026-10-10",
+        "location": "Seminar Hall",
+        "description": "Introduction to Artificial Intelligence and Machine Learning.",
+        "category": "Technical"
+    },
+    {
+        "title": "Annual Sports Day",
+        "date": "2026-10-15",
+        "location": "Sports Ground",
+        "description": "Annual sports activities including running, volleyball and football.",
+        "category": "Sports"
+    },
+    {
+        "title": "Garba Night",
+        "date": "2026-10-20",
+        "location": "College Ground",
+        "description": "A fun cultural evening featuring traditional Garba performances.",
+        "category": "Cultural"
+    },
+    {
+        "title": "Hackathon 2026",
+        "date": "2026-10-25",
+        "location": "Innovation Lab",
+        "description": "Build innovative technology solutions within a limited time.",
+        "category": "Technical"
+    }
+]

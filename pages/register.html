@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"content="width=device-width, initial-scale=1.0">
+
+    <title>Register | StudentHub Portal</title>
+
+    <link rel="stylesheet" href="../css/style.css">
+
+</head>
+<body>
+
+
+<header>
+
+    <div class="logo">
+
+        <img src="../images/logo.png"alt="StudentHub Logo">
+        <h2>StudentHub</h2>
+
+    </div>
+
+
+    <nav>
+
+        <a href="../index.html">Home</a>
+        <a href="dashboard.html">Dashboard</a>
+        <a href="courses.html">Courses</a>
+        <a href="attendance.html">
+            Attendance
+        </a>
+
+        <a href="assignment.html">
+            Assignments
+        </a>
+
+        <a href="result.html">
+            Results
+        </a>
+
+        <a href="contact.html">
+            Contact
+        </a>
+
+        <a href="login.html">
+            Login
+        </a>
+
+        <a href="register.html">
+            Register
+        </a>
+
+    </nav>
+
+</header>
+
+
+<section class="about">
+
+    <h2>Create New Account</h2>
+
+    <div id="message"></div>
+
+    <form id="registrationForm"
+      action="../php/register.php"
+      method="POST"
+      onsubmit="return validateForm()">
+
+    <label for="name">
+        Full Name
+    </label>
+
+    <br>
+
+    <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Enter your full name"
+        required>
+
+    <br><br>
+
+    <label for="email">
+        Email Address
+    </label>
+
+    <br>
+
+    <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="Enter your email"
+        required>
+
+    <br><br>
+
+
+    <label for="mobile">
+        Mobile Number
+    </label>
+
+    <br>
+
+    <input
+        type="tel"
+        id="mobile"
+        name="mobile"
+        placeholder="Enter 10 digit mobile number"
+        pattern="[0-9]{10}"
+        maxlength="10"
+        required>
+
+    <br><br>
+
+
+    <label for="password">
+        Password
+    </label>
+
+    <br>
+
+    <input
+        type="password" id="password" name="password" placeholder="Create password" minlength="6" required>
+    <br><br>
+
+
+    <label for="confirm_password">
+        Confirm Password
+    </label>
+
+    <br>
+
+    <input
+        type="password"
+        id="confirm_password"
+        name="confirm_password"
+        placeholder="Confirm password"
+        minlength="6"
+        required>
+
+    <br><br>
+
+
+    <label for="course">
+        Course
+    </label>
+
+    <br>
+
+    <select id="course" name="course" required>
+
+        <option value="">
+            Select Course
+        </option>
+
+        <option value="Computer Engineering">
+            Computer Engineering
+        </option>
+
+        <option value="Information Technology">
+            Information Technology
+        </option>
+
+        <option value="Data Science">
+            Data Science
+        </option>
+
+        <option value="Artificial Intelligence">
+            Artificial Intelligence
+        </option>
+
+    </select>
+
+    <br><br>
+
+
+    <label for="year">
+        Year
+    </label>
+
+    <br>
+
+    <select id="year" name="year" required>
+
+        <option value="">
+            Select Year
+        </option>
+
+        <option value="1st Year">
+            1st Year
+        </option>
+
+        <option value="2nd Year">
+            2nd Year
+        </option>
+
+        <option value="3rd Year">
+            3rd Year
+        </option>
+
+        <option value="4th Year">
+            4th Year
+        </option>
+
+    </select>
+
+    <br><br>
+
+
+    <div class="gender-box">
+
+        <div class="gender-title">
+            Gender
+        </div>
+
+        <div class="gender-options">
+
+            <div class="gender-option">
+
+                <input
+                    type="radio"
+                    id="male"
+                    name="gender"
+                    value="Male"
+                    required>
+
+                <span>Male</span>
+
+            </div>
+
+
+            <div class="gender-option">
+
+                <input
+                    type="radio"
+                    id="female"
+                    name="gender"
+                    value="Female">
+
+                <span>Female</span>
+
+            </div>
+
+
+            <div class="gender-option">
+
+                <input
+                    type="radio"
+                    id="other"
+                    name="gender"
+                    value="Other">
+
+                <span>Other</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <br><br>
+
+
+    <label>
+
+        <input
+            type="checkbox" name="terms"  value="Accepted" required>I accept the Terms and Conditions.
+    </label>
+
+    <br><br>
+
+
+    <button
+        class="btn"type="submit">Register
+    </button>
+
+</form>
+
+    <br>
+
+    <p>
+        Already have an account?
+        <a href="login.html">Login Here </a>
+    </p>
+
+
+</section>
+
+<footer>
+
+    <p>
+        © 2026 StudentHub Portal |
+        All Rights Reserved.
+    </p>
+
+</footer>
+
+<script>
+
+    const params =new URLSearchParams(window.location.search);
+    const status =params.get("status");
+    const message =document.getElementById("message");
+
+    if (status === "success") {
+
+        message.innerHTML =
+            "<p style='color:green; font-weight:bold;'>Registration successful! Your information has been saved.</p>";
+
+    }
+
+if (status === "duplicate") {
+
+    message.innerHTML =
+        "<p style='color:red; font-weight:bold;'>Email already exists. Please use another email.</p>";
+
+}
+
+    if (status === "error") {
+
+        message.innerHTML =
+            "<p style='color:red; font-weight:bold;'>Registration failed. Please check your information and try again.</p>";
+
+    }
+
+</script>
+
+
+</body>
+
+</html>

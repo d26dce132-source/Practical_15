@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>StudentHub Portal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- ==============================
+         NOTIFICATION
+         ============================== -->
+
+    <div id="notification" class="notification">
+
+        🔔 Welcome to StudentHub Portal!
+
+    </div>
+
+
+    <!-- ==============================
+         HEADER
+         ============================== -->
+
+    <header>
+
+        <div class="logo">
+
+            <img src="images/logo.png"
+                 alt="Logo">
+
+            <h2>StudentHub</h2>
+
+        </div>
+
+
+        <nav id="mainNav">
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <!-- NEW: ALL INFORMATION -->
+            <a href="#allInfo">
+                All Info
+            </a>
+
+           <a href="dashboard.php">Dashboard</a>
+
+            <a href="pages/courses.html">
+                Courses
+            </a>
+
+            <a href="pages/attendance.html">
+                Attendance
+            </a>
+
+            <a href="pages/assignment.html">
+                Assignments
+            </a>
+
+            <a href="pages/result.html">
+                Results
+            </a>
+
+            <a href="pages/contact.html">
+                Contact
+            </a>
+
+            <a href="pages/login.html">
+                Login
+            </a>
+
+            <a href="pages/register.html">
+                Register
+            </a>
+
+            <a href="php/logout.php">Logout</a>
+            
+
+        </nav>
+
+
+        <div class="javascript-buttons">
+
+            <!-- Hamburger Menu -->
+
+            <button onclick="toggleMenu()">
+
+                ☰ Menu
+
+            </button>
+
+
+            <!-- Dark Mode -->
+
+            <button id="themeButton"
+                    onclick="toggleTheme()">
+
+                🌙 Dark Mode
+
+            </button>
+
+
+            <!-- Notification -->
+
+        
+
+        </div>
+
+    </header>
+
+
+
+    <!-- ==============================
+         HERO SECTION
+         ============================== -->
+
+    <section class="hero">
+
+        <div class="hero-container">
+
+
+            <div class="hero-text">
+
+                <h1>
+                    StudentHub Portal
+                </h1>
+
+
+                <p>
+
+                    A Complete Digital Campus
+                    Solution for Students,
+                    Faculty and Administration.
+
+                </p>
+
+
+                <a href="pages/login.html"
+                   class="btn">
+
+                    Get Started
+
+                </a>
+
+
+                <br>
+                <br>
+
+
+                <!-- Modal -->
+
+                <button onclick="openModal()">
+
+                    ℹ️ Learn More
+
+                </button>
+
+            </div>
+
+
+
+            <div class="hero-image">
+
+                <img id="sliderImage"
+                     src="images/student.png"
+                     alt="Student">
+
+
+                <br>
+
+
+                <button onclick="previousImage()">
+
+                    ❮ Previous
+
+                </button>
+
+
+                <button onclick="nextImage()">
+
+                    Next ❯
+
+                </button>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         STATISTICS
+         ============================== -->
+
+    <section class="stats">
+
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-user-graduate"></i>
+
+            <h2>5000+</h2>
+
+            <p>Students</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-book"></i>
+
+            <h2>120+</h2>
+
+            <p>Courses</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-chalkboard-user"></i>
+
+            <h2>180+</h2>
+
+            <p>Faculty</p>
+
+        </div>
+
+
+        <div class="stat-card">
+
+            <i class="fa-solid fa-award"></i>
+
+            <h2>98%</h2>
+
+            <p>Success Rate</p>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         FEATURES
+         ============================== -->
+
+    <section id="features"
+             class="about">
+
+
+        <h2>
+            Portal Features
+        </h2>
+
+
+        <div class="cards">
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-calendar-check fa-3x"></i>
+
+                <h3>
+                    Attendance
+                </h3>
+
+                <p>
+                    Track your daily attendance
+                    and attendance percentage.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-file-circle-check fa-3x"></i>
+
+                <h3>
+                    Assignments
+                </h3>
+
+                <p>
+                    Submit assignments online
+                    before the due date.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-chart-column fa-3x"></i>
+
+                <h3>
+                    Results
+                </h3>
+
+                <p>
+                    View semester marks,
+                    grades and CGPA instantly.
+                </p>
+
+            </div>
+
+
+            <div class="card">
+
+                <i class="fa-solid fa-book-open fa-3x"></i>
+
+                <h3>
+                    Courses
+                </h3>
+
+                <p>
+                    Access course details
+                    and study materials.
+                </p>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ==============================
+         ABOUT
+         ============================== -->
+
+    <section id="about"
+             class="about">
+
+
+        <h2>
+            About StudentHub Portal
+        </h2>
+
+
+        <p>
+
+            StudentHub Portal is a modern web
+            application designed to simplify
+            academic activities.
+
+            <br>
+            <br>
+
+            Students can manage attendance,
+            assignments, examination results,
+            course information, notifications,
+            and their personal profile from
+            one secure platform.
+
+        </p>
+
+    </section>
+
+
+
+    <!-- =====================================================
+         PRACTICAL 6
+         FETCH API + JSON
+         SEARCH + FILTER + SORT + PAGINATION
+         ===================================================== -->
+
+
+    <section id="allInfo">
+
+
+        <!-- ==============================
+             EVENTS
+             ============================== -->
+
+        <section id="events"
+                 class="dynamic-section">
+
+
+            <h2>
+                Upcoming Events
+            </h2>
+
+
+            <div class="controls">
+
+
+                <input
+                    type="text"
+                    id="eventSearch"
+                    placeholder="Search events..."
+                    oninput="renderEvents()">
+
+
+                <select id="eventFilter"
+                        onchange="renderEvents()">
+
+                    <option value="All">
+                        All Categories
+                    </option>
+
+                    <option value="Technical">
+                        Technical
+                    </option>
+
+                    <option value="Sports">
+                        Sports
+                    </option>
+
+                    <option value="Cultural">
+                        Cultural
+                    </option>
+
+                    <option value="Career">
+                        Career
+                    </option>
+
+                </select>
+
+
+                <select id="eventSort"
+                        onchange="renderEvents()">
+
+                    <option value="dateAsc">
+                        Date: Oldest First
+                    </option>
+
+                    <option value="dateDesc">
+                        Date: Newest First
+                    </option>
+
+                    <option value="titleAsc">
+                        Title: A-Z
+                    </option>
+
+                    <option value="titleDesc">
+                        Title: Z-A
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div id="eventList"
+                 class="dynamic-grid">
+            </div>
+
+
+            <div id="eventPagination"
+                 class="pagination">
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==============================
+             STUDENT PROFILES
+             ============================== -->
+
+        <section id="students"
+                 class="dynamic-section">
+
+
+            <h2>
+                Student Profiles
+            </h2>
+
+
+            <div class="controls">
+
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    placeholder="Search students..."
+                    oninput="renderStudents()">
+
+
+                <select id="studentFilter"
+                        onchange="renderStudents()">
+
+                    <option value="All">
+                        All Courses
+                    </option>
+
+                    <option value="Computer Engineering">
+                        Computer Engineering
+                    </option>
+
+                    <option value="Information Technology">
+                        Information Technology
+                    </option>
+
+                    <option value="Data Science">
+                        Data Science
+                    </option>
+
+                    <option value="Artificial Intelligence">
+                        Artificial Intelligence
+                    </option>
+
+                </select>
+
+
+                <select id="studentSort"
+                        onchange="renderStudents()">
+
+                    <option value="nameAsc">
+                        Name: A-Z
+                    </option>
+
+                    <option value="nameDesc">
+                        Name: Z-A
+                    </option>
+
+                    <option value="yearAsc">
+                        Year
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <div id="studentList"
+                 class="dynamic-grid">
+            </div>
+
+
+            <div id="studentPagination"
+                 class="pagination">
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==============================
+             NOTICES
+             ============================== -->
+
+        <section id="notices"
+                 class="dynamic-section">
+
+
+            <h2>
+                College Notices
+            </h2>
+
+
+            <div class="controls">
+
+
+                <input
+                    type="text"
+                    id="noticeSearch"
+                    placeholder="Search notices..."
+                    oninput="renderNotices()">
+
+            </div>
+
+
+            <div id="noticeList"
+                 class="notice-list">
+            </div>
+
+
+        </section>
+
+
+
+        <!-- ==============================
+             FAQ
+             ============================== -->
+
+        <section id="faqs"
+                 class="dynamic-section">
+
+
+            <h2>
+                Frequently Asked Questions
+            </h2>
+
+
+            <div class="controls">
+
+
+                <input
+                    type="text"
+                    id="faqSearch"
+                    placeholder="Search FAQ..."
+                    oninput="renderFAQs()">
+
+            </div>
+
+
+            <div id="faqList"
+                 class="faq-list">
+            </div>
+
+
+        </section>
+
+
+    </section>
+
+
+
+    <!-- ==============================
+         MODAL
+         ============================== -->
+
+    <div id="myModal"
+         class="modal">
+
+
+        <div class="modal-content">
+
+
+            <span class="close"
+                  onclick="closeModal()">
+
+                &times;
+
+            </span>
+
+
+            <h2>
+                Welcome to StudentHub
+            </h2>
+
+
+            <p>
+
+                StudentHub Portal helps students
+                manage courses, attendance,
+                assignments and results.
+
+            </p>
+
+
+            <button onclick="closeModal()">
+
+                Close
+
+            </button>
+
+
+        </div>
+
+    </div>
+
+
+
+    <!-- ==============================
+         FOOTER
+         ============================== -->
+
+    <footer>
+
+        <p>
+
+            © 2026 StudentHub Portal |
+            Designed by Divya Rathi
+
+        </p>
+
+    </footer>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>

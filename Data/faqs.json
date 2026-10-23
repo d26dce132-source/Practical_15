@@ -1,0 +1,34 @@
+[
+    {
+        "question": "How can I register for a college event?",
+        "answer": "You can register for an event through the college student portal or contact the event coordinator."
+    },
+    {
+        "question": "Where can I check the examination timetable?",
+        "answer": "The examination timetable is available in the Notices section of the Student Portal."
+    },
+    {
+        "question": "How can I update my student profile?",
+        "answer": "Contact the college administration or student support team to update your profile information."
+    },
+    {
+        "question": "How can I search for an event?",
+        "answer": "Go to the Events section and enter the event name or keyword in the search box."
+    },
+    {
+        "question": "Can I filter events by category?",
+        "answer": "Yes. You can filter events using the category dropdown such as Technical, Cultural, or Sports."
+    },
+    {
+        "question": "How does sorting work?",
+        "answer": "You can sort events by title or date using the Sort By dropdown menu."
+    },
+    {
+        "question": "What is pagination?",
+        "answer": "Pagination divides a large amount of data into smaller pages so that only a limited number of records are displayed at a time."
+    },
+    {
+        "question": "What is the Fetch API?",
+        "answer": "Fetch API is a JavaScript feature used to request and retrieve data from external resources such as JSON files."
+    }
+]

@@ -1,0 +1,58 @@
+[
+    {
+        "name": "Aarav Patel",
+        "id": "ST101",
+        "email": "aarav@example.com",
+        "department": "Computer",
+        "semester": 5
+    },
+    {
+        "name": "Diya Shah",
+        "id": "ST102",
+        "email": "diya@example.com",
+        "department": "IT",
+        "semester": 5
+    },
+    {
+        "name": "Rohan Mehta",
+        "id": "ST103",
+        "email": "rohan@example.com",
+        "department": "AI",
+        "semester": 5
+    },
+    {
+        "name": "Priya Desai",
+        "id": "ST104",
+        "email": "priya@example.com",
+        "department": "Computer",
+        "semester": 4
+    },
+    {
+        "name": "Yash Joshi",
+        "id": "ST105",
+        "email": "yash@example.com",
+        "department": "IT",
+        "semester": 6
+    },
+    {
+        "name": "Ananya Patel",
+        "id": "ST106",
+        "email": "ananya@example.com",
+        "department": "AI",
+        "semester": 4
+    },
+    {
+        "name": "Krish Patel",
+        "id": "ST107",
+        "email": "krish@example.com",
+        "department": "Computer",
+        "semester": 6
+    },
+    {
+        "name": "Mahi Shah",
+        "id": "ST108",
+        "email": "mahi@example.com",
+        "department": "IT",
+        "semester": 4
+    }
+]

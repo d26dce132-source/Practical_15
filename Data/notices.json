@@ -1,0 +1,42 @@
+[
+    {
+        "title": "Mid-Semester Examination Notice",
+        "date": "2026-09-18",
+        "message": "The mid-semester examination timetable has been published. Students are requested to check the examination schedule."
+    },
+    {
+        "title": "Assignment Submission",
+        "date": "2026-09-22",
+        "message": "All students must submit their pending assignments before the submission deadline."
+    },
+    {
+        "title": "Library Timing Update",
+        "date": "2026-09-24",
+        "message": "The college library will remain open from 8:00 AM to 7:00 PM on working days."
+    },
+    {
+        "title": "Holiday Notice",
+        "date": "2026-10-01",
+        "message": "The college will remain closed on the announced public holiday."
+    },
+    {
+        "title": "Workshop Registration",
+        "date": "2026-10-04",
+        "message": "Students interested in attending the Web Development Workshop should complete their registration."
+    },
+    {
+        "title": "Project Submission Deadline",
+        "date": "2026-10-12",
+        "message": "Final year students must submit their project reports before the given deadline."
+    },
+    {
+        "title": "Sports Day Registration",
+        "date": "2026-10-14",
+        "message": "Students can register for various sports events through the student portal."
+    },
+    {
+        "title": "Hackathon Registration Open",
+        "date": "2026-10-18",
+        "message": "Registration for Hackathon 2026 is now open. Interested students can register with their teams."
+    }
+]
